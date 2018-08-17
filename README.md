@@ -4,11 +4,9 @@
 ### 分析
 直接使用Java提供的API需要处理如下类之间的关系
 
-![Java API类图](http://jisonami.org/images/Java_Security/Crypto/JavaCryptoClassDiagram.png)
 
 使用crypto类库则只需要处理如下类之间的关系
 
-![crypto API类图](http://jisonami.org/images/Java_Security/Crypto/CryptoClassDiagram.png)
 
 ### 支持的算法列表
 
@@ -380,4 +378,6 @@ String decryptData = pbeCryptography.decrypt(encryptData, password, salt);
 System.out.println("解密后数据：" + decryptData);
 ```
 
-更详细的API请参考[crypto的JavaDoc文档](http://jisonami.org/docs/Java_Security/Crypto/doc/)
+更详细的API请参考
+
+pom.xml中加入对hamcrest-core的引用
